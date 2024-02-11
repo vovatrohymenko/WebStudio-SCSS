@@ -1,0 +1,8 @@
+:root {
+  --colortextprimary: #212121;
+  --colortextprimary: #757575;
+  --colorTextAdditional: rgba(255, 255, 255, 0.6);
+  --colortextprimary: #ffffff;
+  --colortextbackground: #2f303a;
+  --colorhover: #2196f3;
+}
