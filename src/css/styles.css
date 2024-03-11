@@ -15,7 +15,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
 }
 .item-link:hover {
   color: #2196f3;
@@ -24,7 +23,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  text-decoration: none;
+
   color: #757575;
 }
 .emeil-link:hover {
@@ -34,7 +33,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: #757575;
 }
 .tel-link:hover {
@@ -54,13 +52,15 @@ body {
   color: #fff;
 }
 .advice-button {
-  font-weight: 700;
+  padding: 10px 32px;
+  background-color: #2196f3;
+  color: #fff;
   font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
-  background-color: #2196f3;
 }
 .advantages-titel {
   font-weight: 700;
@@ -163,7 +163,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  text-decoration: none;
 }
 .directions-link:hover {
   color: #2196f3;
