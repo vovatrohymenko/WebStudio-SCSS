@@ -22,6 +22,18 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-conteiner {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: 93px;
+}
 .item-link {
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -29,6 +41,14 @@ body {
 }
 .item-link:hover {
   color: #2196f3;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 100px;
+
+  justify-content: space-between;
 }
 .emeil-link {
   font-weight: 500;
@@ -45,6 +65,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-right: 215px;
+  align-items: center;
 }
 .tel-link:hover {
   color: #2196f3;
@@ -86,6 +108,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.advantages-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
 .advantages-titel {
   font-weight: 700;
   font-size: 14px;
@@ -107,12 +134,20 @@ body {
   color: #212121;
   padding-bottom: 50px;
 }
+
 .devices {
+  display: flex;
+  gap: 30px;
+  align-items: center;
   padding-bottom: 94px;
 }
 .team {
   padding-top: 186px;
   padding-bottom: 94px;
+}
+.team-div {
+  display: flex;
+  gap: 30px;
 }
 .team-titel {
   padding-top: 94px;
