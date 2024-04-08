@@ -12,3 +12,6 @@ input {
   border: none;
   outline: none;
 }
+img {
+  max-width: 100%;
+}

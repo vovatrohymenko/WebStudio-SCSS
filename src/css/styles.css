@@ -8,22 +8,22 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  font-size: 14px;
+  font-weight: 400;
 }
-.conteiner {
+.container {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1170px;
-  padding-left: 215px;
-  padding-right: 215px;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* ============================================Header============================================================= */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-conteiner {
-  max-width: 1170px;
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +32,6 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-left: 93px;
 }
 .item-link {
   font-size: 14px;
@@ -46,7 +45,6 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-left: 100px;
 
   justify-content: space-between;
 }
@@ -65,7 +63,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-right: 215px;
   align-items: center;
 }
 .tel-link:hover {
@@ -75,7 +72,7 @@ body {
 .advice-div {
   background-color: #2f303a;
 }
-.advice-titel {
+.advice-title {
   padding-top: 200px;
   padding-bottom: 280px;
   width: 692px;
@@ -113,7 +110,7 @@ body {
   gap: 30px;
   align-items: center;
 }
-.advantages-titel {
+.advantages-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -126,7 +123,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.work-titel {
+.work-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -149,7 +146,10 @@ body {
   display: flex;
   gap: 30px;
 }
-.team-titel {
+.team-img {
+  margin-bottom: 30px;
+}
+.team-title {
   padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
@@ -157,6 +157,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 10px;
 }
 .team-name {
   font-weight: 500;
@@ -165,7 +166,7 @@ body {
   text-align: center;
   color: #212121;
 }
-.div-Ihor {
+.teammate {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -177,49 +178,16 @@ body {
   text-align: center;
   color: #757575;
 }
-.div-olha {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #757575;
-}
-.div-mykolla {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #757575;
-}
-.div-mehailo {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #757575;
-}
+
 /* ============================================footer============================================================= */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-link {
+  margin-bottom: 20px;
+}
 .item-location {
   font-weight: 400;
   font-size: 14px;
@@ -228,6 +196,19 @@ body {
   color: #fff;
 }
 /* ============================================Portfolio============================================================= */
+
+.directions {
+  margin-bottom: 34px;
+}
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-portfolio {
+  width: 370px;
+}
 
 .directions-link {
   font-weight: 500;
@@ -240,12 +221,22 @@ body {
 .directions-link:hover {
   color: #2196f3;
 }
-.project-titel {
+.directions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.project-img {
+  margin-bottom: 20px;
+}
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 .project-text {
   font-weight: 400;
