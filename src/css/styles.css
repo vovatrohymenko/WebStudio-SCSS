@@ -18,7 +18,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* ============================================Header============================================================= */
+/* ============================================HEADER============================================================= */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -39,7 +39,7 @@ body {
   color: #212121;
 }
 .item-link:hover {
-  color: #2196f3;
+  color: var(--colorhover);
 }
 .header-contacts {
   display: flex;
@@ -56,7 +56,7 @@ body {
   color: #757575;
 }
 .emeil-link:hover {
-  color: #2196f3;
+  color: var(--colorhover);
 }
 .tel-link {
   font-weight: 500;
@@ -66,41 +66,45 @@ body {
   align-items: center;
 }
 .tel-link:hover {
-  color: #2196f3;
+  color: var(--colorhover);
 }
-/* ============================================main============================================================= */
-.advice-div {
-  background-color: #2f303a;
-}
-.advice-title {
+/* ============================================MAIN============================================================= */
+/* ============================================HERO============================================================= */
+.hero {
+  background-color: var(--colortextbackground);
   padding-top: 200px;
-  padding-bottom: 280px;
-  width: 692px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-bottom: 200px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.hero-title {
+  max-width: 692px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--colortextprimary);
 }
-.div-button {
-  margin-right: auto;
-  margin-left: auto;
-}
-.advice-button {
+
+.hero-button {
   padding: 10px 32px;
-  background-color: #2196f3;
-  color: #fff;
+  background-color: var(--colorhover);
+  color: var(--colortextprimary);
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 4px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
 }
+/* ============================================ADVANTAGES============================================================= */
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -109,6 +113,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+  flex-basis: calc((100% - 30px) / 4);
 }
 .advantages-title {
   font-weight: 700;
@@ -123,6 +128,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+/* ============================================WORK============================================================= */
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -133,11 +139,13 @@ body {
 }
 
 .devices {
+  flex-basis: calc((100% - 30px) / 3);
   display: flex;
   gap: 30px;
   align-items: center;
   padding-bottom: 94px;
 }
+/* ============================================TEAM============================================================= */
 .team {
   padding-top: 186px;
   padding-bottom: 94px;
@@ -145,6 +153,7 @@ body {
 .team-div {
   display: flex;
   gap: 30px;
+  flex-basis: calc((100% - 30px) / 4);
 }
 .team-img {
   margin-bottom: 30px;
@@ -166,26 +175,29 @@ body {
   text-align: center;
   color: #212121;
 }
+.team-profession {
+  color: #757575;
+}
 .teammate {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--colortextprimary);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--colortextprimary);
 }
 
-/* ============================================footer============================================================= */
+/* ============================================FOOTER============================================================= */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--colortextbackground);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-link {
+.footer-img {
   margin-bottom: 20px;
 }
 .item-location {
@@ -193,23 +205,21 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--colortextprimary);
 }
-/* ============================================Portfolio============================================================= */
-
+/* ============================================PORTFOLIO.HTML============================================================= */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* ============================================DIRECTIONS============================================================= */
 .directions {
   margin-bottom: 34px;
-}
-.portfolio-projects {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
-
-.project-portfolio {
-  width: 370px;
-}
-
 .directions-link {
   font-weight: 500;
   font-size: 16px;
@@ -217,16 +227,24 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-}
-.directions-link:hover {
-  color: #2196f3;
-}
-.directions {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
+
+.directions-link:hover {
+  color: var(--colorhover);
+}
+/* ============================================PORTFOLIO============================================================= */
+
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .project-img {
   margin-bottom: 20px;
 }
@@ -244,8 +262,4 @@ body {
   line-height: 187%;
   letter-spacing: 0.03em;
   color: #757575;
-}
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }

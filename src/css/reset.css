@@ -10,8 +10,13 @@ a {
 }
 input {
   border: none;
-  outline: none;
+  outline: 0;
 }
 img {
   max-width: 100%;
+  display: block;
+}
+button {
+  border: none;
+  outline: 0;
 }
