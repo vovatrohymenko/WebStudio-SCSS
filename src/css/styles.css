@@ -1,10 +1,11 @@
 :root {
   --colortextprimary: #212121;
-  --colortextprimary: #757575;
+  --colortextsecondary: #757575;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
-  --colortextprimary: #ffffff;
+  --colortexttertiary: #ffffff;
   --colortextbackground: #2f303a;
   --colorhover: #2196f3;
+  --colortextbackgroundwhite: #f5f4fa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -36,7 +37,7 @@ body {
 .item-link {
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--colortextprimary);
 }
 .item-link:hover {
   color: var(--colorhover);
@@ -53,7 +54,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--colortextsecondary);
 }
 .emeil-link:hover {
   color: var(--colorhover);
@@ -62,7 +63,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--colortextsecondary);
   align-items: center;
 }
 .tel-link:hover {
@@ -90,13 +91,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--colortextprimary);
+  color: var(--colortexttertiary);
 }
 
 .hero-button {
   padding: 10px 32px;
   background-color: var(--colorhover);
-  color: var(--colortextprimary);
+  color: var(--colortexttertiary);
   font-size: 16px;
   font-weight: 700;
   border-radius: 4px;
@@ -106,8 +107,8 @@ body {
 }
 /* ============================================ADVANTAGES============================================================= */
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .advantages-list {
   display: flex;
@@ -115,18 +116,43 @@ body {
   align-items: center;
   flex-basis: calc((100% - 30px) / 4);
 }
+.advantages-item::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.advantages-item:nth-child(1)::before {
+  background-image: url(../img/antenna\ 1.svg);
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../img/clock\ 1.svg);
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../img/diagram\ 1.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../img/astronaut\ 1.svg);
+}
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantages-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--colortextsecondary);
 }
 /* ============================================WORK============================================================= */
 .work-title {
@@ -134,8 +160,8 @@ body {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
-  padding-bottom: 50px;
+  color: var(--colortextprimary);
+  margin-bottom: 50px;
 }
 
 .devices {
@@ -147,8 +173,9 @@ body {
 }
 /* ============================================TEAM============================================================= */
 .team {
-  padding-top: 186px;
+  padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--colortextbackgroundwhite);
 }
 .team-div {
   display: flex;
@@ -159,36 +186,31 @@ body {
   margin-bottom: 30px;
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
-  margin-bottom: 10px;
+  color: var(--colortextprimary);
+  margin-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--colortextprimary);
+  margin-bottom: 10px;
 }
 .team-profession {
-  color: #757575;
+  color: var(--colortextsecondary);
 }
 .teammate {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--colortextprimary);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--colortextprimary);
+  background-color: var(--colortexttertiary);
+  padding-bottom: 30px;
 }
 
 /* ============================================FOOTER============================================================= */
@@ -205,7 +227,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--colortextprimary);
+  color: var(--colortexttertiary);
+  margin-bottom: 10px;
 }
 /* ============================================PORTFOLIO.HTML============================================================= */
 .portfolio {
@@ -226,11 +249,13 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--colortextprimary);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .directions-link:hover {
@@ -253,7 +278,7 @@ body {
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--colortextprimary);
   margin-bottom: 4px;
 }
 .project-text {
@@ -261,5 +286,5 @@ body {
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--colortextsecondary);
 }
