@@ -8,15 +8,14 @@ ul {
 a {
   text-decoration: none;
 }
-input {
-  border: none;
-  outline: 0;
-}
+
 img {
   max-width: 100%;
   display: block;
 }
-button {
-  border: none;
+button,
+input,
+textarea {
+  border: 0;
   outline: 0;
 }

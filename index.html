@@ -49,7 +49,7 @@
           <li class="contacts-item">
             <a class="emeil-link" href="mailto:info@devstudio.com"
               ><svg class="emeil-icon">
-                <use href="./src/img/symbol-defs.svg#icon-envelope"></use>
+                <use href="./src/img/symbol-defs.svg#icon-letter"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -69,7 +69,96 @@
       <section class="hero">
         <div class="container hero-container">
           <h2 class="hero-title">Ефективні рішення для вашого бізнесу</h2>
-          <button class="hero-button">Замовити послугу</button>
+
+          <button class="hero-button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <h2 class="modal-titli">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
+              <button class="button-close" data-modal-close>
+                <svg class="button-close-icon">
+                  <use href="./src/img/modal cards.svg#icon-x"></use>
+                </svg>
+              </button>
+              <form class="contact-form" action="#">
+                <div class="form-group">
+                  <label class="contact-form-label" for="contact-name"
+                    >Ім'я</label
+                  >
+                  <div class="contact-form-wrapper">
+                    <svg class="contact-form-icon">
+                      <use href="./src/img/form-icons.svg#icon-people"></use>
+                    </svg>
+                    <input
+                      class="contact-form-input"
+                      id="contact-name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="contact-form-label" for="contact-tel"
+                    >Телефон</label
+                  >
+                  <div class="contact-form-wrapper">
+                    <svg class="contact-form-icon">
+                      <use href="./src/img/form-icons.svg#icon-phone"></use>
+                    </svg>
+                    <input
+                      class="contact-form-input"
+                      id="contact-tel"
+                      type="tel"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="contact-form-label" for="contact-email"
+                    >Пошта</label
+                  >
+                  <div class="contact-form-wrapper">
+                    <svg class="contact-form-icon">
+                      <use href="./src/img/form-icons.svg#icon-email"></use>
+                    </svg>
+                    <input
+                      class="contact-form-input"
+                      id="contact-email"
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="contact-form-label" for="contact-comment"
+                    >Коментар</label
+                  >
+                  <div class="contact-form-wrappers">
+                    <label class="contact-form-text" for=""
+                      >Введіть текст</label
+                    >
+
+                    <textarea
+                      class="contact-form-textarea"
+                      name="comment"
+                      id="contact-comment"
+                      cols="100"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="conditions">
+                  <input type="checkbox" id="contract" /><label
+                    class="contract-condition"
+                    for="contract"
+                  >
+                    Погоджуюся з розсилкою та приймаю<a href="#"
+                      >Умови договору</a
+                    >
+                  </label>
+                </div>
+                <button class="button-send">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -186,7 +275,7 @@
                 <li class="network-item">
                   <a class="network-link" href="#"
                     ><svg class="network-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./src/img/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
                 </li>
@@ -227,7 +316,7 @@
                 <li class="network-item">
                   <a class="network-link" href="#"
                     ><svg class="network-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./src/img/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
                 </li>
@@ -268,7 +357,7 @@
                 <li class="network-item">
                   <a class="network-link" href="#"
                     ><svg class="network-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./src/img/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
                 </li>
@@ -309,7 +398,7 @@
                 <li class="network-item">
                   <a class="network-link" href="#"
                     ><svg class="network-icon">
-                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./src/img/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
                 </li>
@@ -324,42 +413,42 @@
           <li class="customer-item">
             <a class="customer-link" href="#"
               ><svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company1"></use>
+                <use href="./src/img/symbol-defs.svg#icon-yaco"></use>
               </svg>
             </a>
           </li>
           <li class="customer-item">
             <a class="customer-link" href="#">
               <svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company2"></use>
+                <use href="./src/img/symbol-defs.svg#icon-window"></use>
               </svg>
             </a>
           </li>
           <li class="customer-item">
             <a class="customer-link" href="#">
               <svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company3"></use>
+                <use href="./src/img/symbol-defs.svg#icon-group"></use>
               </svg>
             </a>
           </li>
           <li class="customer-item">
             <a class="customer-link" href="#">
               <svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company4"></use>
+                <use href="./src/img/symbol-defs.svg#icon-poster"></use>
               </svg>
             </a>
           </li>
           <li class="customer-item">
             <a class="customer-link" href="#">
               <svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company5"></use>
+                <use href="./src/img/symbol-defs.svg#icon-brand"></use>
               </svg>
             </a>
           </li>
           <li class="customer-item">
             <a class="customer-link" href="#">
               <svg class="customer-icon">
-                <use href="./src/img/symbol-defs.svg#icon-company6"></use>
+                <use href="./src/img/symbol-defs.svg#icon-company"></use>
               </svg>
             </a>
           </li>
@@ -418,13 +507,32 @@
             <li class="networks-item">
               <a class="networks-link" href="#"
                 ><svg class="networks-icon">
-                  <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./src/img/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <div class="form-footer-email">
+          <p class="form-footer-text">Підпишіться на розсилку</p>
+          <form class="form-footer" action="#">
+            <div class="form-footer-wrapper">
+              <input
+                placeholder="E-mail"
+                class="form-footer-input"
+                id="contact-email"
+                type="email"
+              />
+            </div>
+            <button class="form-footer-btn">
+              Підписатися<svg class="form-footer-icon">
+                <use href="./src/img/symbol-defs.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./src/css/js/script.js"></script>
   </body>
 </html>
