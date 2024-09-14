@@ -177,7 +177,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-} /* ============================================MODAL============================================================= */
+}
+.hero-button:hover {
+  box-shadow: 1px 4px 6px 0 rgb(55, 207, 238, 0.53);
+}
+/* ============================================MODAL============================================================= */
 .modal {
   background-color: var(--colortexttertiary);
 }
@@ -285,8 +289,7 @@ img {
 .contact-form-wrapper:hover .contact-form-icon {
   fill: var(--colorhover);
 }
-.contact-form-wrapper:hover,
-.contact-form-icon:focus-within {
+.contact-form-wrapper:focus-within .contact-form-icon {
   fill: var(--colorhover);
 }
 .contact-form-text {
@@ -307,6 +310,9 @@ img {
   background-color: var(--colorhover);
   text-align: center;
   padding: 10px 52px;
+}
+.button-send:hover {
+  box-shadow: 4px 8px 12px 4px rgb(55, 207, 238, 0.53);
 }
 .contract-condition {
   font-family: var(--font-family);
@@ -677,6 +683,9 @@ img {
   background: rgba(33, 150, 243, 0);
   padding-left: 16px;
 }
+.form-footer-input:focus-within {
+  border-color: var(--colorhover);
+}
 .form-footer-input::placeholder {
   font-family: var(--font-family);
   font-weight: 400;
@@ -705,6 +714,9 @@ img {
   width: 24px;
   height: 24px;
   fill: var(--colortexttertiary);
+}
+.form-footer-btn:hover {
+  box-shadow: 1px 4px 6px 0 rgb(55, 207, 238, 0.53);
 }
 /* ============================================PORTFOLIO.HTML============================================================= */
 .portfolio {
@@ -753,9 +765,14 @@ img {
   border: 1px solid #eee;
   flex-basis: calc((100% - 60px) / 3);
 }
+.project-portfolio:hover .project-overlay {
+  transform: translateY(0);
+  transition-duration: 300ms;
+}
 .project-photo {
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .project-overlay {
   font-family: var(--font-family);
@@ -771,15 +788,9 @@ img {
   left: 0;
   top: 0;
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(101%);
 }
-.project-photo:hover .project-overlay {
-  transform: translateY(-1%);
-  transition-duration: 300ms;
-}
-.project-img {
-  margin-bottom: 20px;
-}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
