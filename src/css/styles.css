@@ -41,6 +41,8 @@ img {
 }
 .item-link {
   position: relative;
+  font-family: var(--font-family);
+  font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--colortextprimary);
@@ -165,8 +167,19 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--colortexttertiary);
+  animation: hero-title 5s linear 1 alternate both;
 }
-
+@keyframes hero-title {
+  0% {
+    transform: translateY(-150px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 .hero-button {
   padding: 10px 32px;
   background-color: var(--colorhover);
@@ -241,6 +254,9 @@ img {
 .button-close-icon {
   width: 11px;
   height: 11px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .button-close-icon:hover {
   fill: var(--colorhover);
@@ -271,6 +287,9 @@ img {
   margin-top: 4px;
   display: flex;
   gap: 10px;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .contact-form-wrapper:hover,
 .contact-form-wrapper:focus-within {
@@ -285,6 +304,9 @@ img {
   height: 18px;
   margin-top: 11px;
   margin-left: 12px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .contact-form-wrapper:hover .contact-form-icon {
   fill: var(--colorhover);
@@ -336,6 +358,12 @@ img {
   gap: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 120px;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.contact-form-textarea {
+  padding: 12px 16px;
 }
 .conditions {
   margin-bottom: 30px;
@@ -539,6 +567,7 @@ img {
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
   display: flex;
@@ -731,7 +760,9 @@ img {
   justify-content: center;
   gap: 8px;
 }
+
 .directions-link {
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -744,6 +775,9 @@ img {
   gap: 8px;
   border-radius: 4px;
   padding: 6px 22px;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .directions-link:hover {
@@ -767,7 +801,6 @@ img {
 }
 .project-portfolio:hover .project-overlay {
   transform: translateY(0);
-  transition-duration: 300ms;
 }
 .project-photo {
   position: relative;
@@ -789,6 +822,9 @@ img {
   top: 0;
   position: absolute;
   transform: translateY(101%);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .project-title {
