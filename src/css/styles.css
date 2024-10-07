@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --colortextprimary: #212121;
   --colortextsecondary: #757575;
   --colorTextAdditional: rgba(255, 255, 255, 0.6);
@@ -6,8 +6,8 @@
   --colortextbackground: #2f303a;
   --colorhover: #2196f3;
   --colortextbackgroundwhite: #f5f4fa;
-}
-body {
+} */
+/* body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -15,16 +15,16 @@ body {
 img {
   display: block;
   width: 100%;
-}
-.container {
+} */
+/* .container {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 /* ============================================HEADER============================================================= */
-.header {
+/* .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -134,10 +134,10 @@ img {
 }
 .tel-link:hover {
   color: var(--colorhover);
-}
+} */
 /* ============================================MAIN============================================================= */
 /* ============================================HERO============================================================= */
-.hero {
+/* .hero {
   background-image: linear-gradient(
       to right,
       rgba(48, 49, 59, 0.4),
@@ -193,7 +193,7 @@ img {
 }
 .hero-button:hover {
   box-shadow: 1px 4px 6px 0 rgb(55, 207, 238, 0.53);
-}
+} */
 /* ============================================MODAL============================================================= */
 .modal {
   background-color: var(--colortexttertiary);  transition-duration: 250ms;  transition-property: opacity;

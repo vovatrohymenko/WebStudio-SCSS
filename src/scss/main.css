@@ -1,0 +1,183 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero-button {
+  padding: 10px 32px;
+  background-color: var(--colorhover);
+  color: var(--colortexttertiary);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.hero-button:hover {
+  box-shadow: 1px 4px 6px 0 rgba(55, 207, 238, 0.53);
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.item-link {
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--colortextprimary);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-link:hover {
+  color: var(--colorhover);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--colorhover);
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: right;
+}
+
+.item-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.emeil-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--colortextsecondary);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.emeil-link:hover {
+  color: var(--colorhover);
+}
+
+.emeil-link:hover .emeil-icon {
+  fill: var(--colorhover);
+}
+
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--colortextsecondary);
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.tel-link:hover .tel-icon {
+  fill: var(--colorhover);
+}
+
+.tel-link:hover {
+  color: var(--colorhover);
+}
+
+.emeil-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--colortextsecondary);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--colortextsecondary);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}/*# sourceMappingURL=main.css.map */
