@@ -1,0 +1,41 @@
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $color-text-primary;
+    margin-bottom: 50px;
+  }
+  
+  .device-list {
+    flex-basis: calc((100% - 30px) / 3);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 94px;
+  }
+  
+  .device {
+    position: relative;
+  }
+  
+  .device-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    color: $color-text-tertiary;
+    text-align: center;
+    padding: 27px 0;
+    text-transform: uppercase;
+  }
+  

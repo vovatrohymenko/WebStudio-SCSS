@@ -1,0 +1,98 @@
+// PORTFOLIO-HTML
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+// DIRECTIONS
+.directions {
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.directions-button {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.directions-button:hover {
+  background-color: $color-hover;
+  color: $color-text-tertiary;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+// PORTFOLIO
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project-portfolio {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid #eee;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.project-portfolio:hover .project-overlay {
+  transform: translateY(0);
+}
+.project-photo {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.project-overlay {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 63px 24px 63px 24px;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(207, 90%, 54%, 0.9);
+  left: 0;
+  top: 0;
+  position: absolute;
+  transform: translateY(101%);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: $color-text-primary;
+  margin-bottom: 4px;
+  margin-left: 24px;
+}
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: $color-text-secondary;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}

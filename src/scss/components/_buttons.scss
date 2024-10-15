@@ -1,14 +1,24 @@
 .hero-button {
-    padding: 10px 32px;
-    background-color: color(srgb red green blue);
-    color: $color-text-tertiary;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 4px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-align: center;
-  }
-  .hero-button:hover {
-    box-shadow: 1px 4px 6px 0 rgb(55, 207, 238, 0.53);
-  }
+  padding: 10px 32px;
+}
+.hero-button:hover {
+  box-shadow: 1px 4px 6px 0 rgba(37, 207, 241, 0.53);
+}
+.form-footer-btn {
+  font-family: var(--font-family);
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button {
+  background-color: $color-hover;
+  color: $color-text-tertiary;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 1.87;
+}

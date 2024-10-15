@@ -1,12 +1,31 @@
-@import"./base/base";
-@import"./base/reset";
-@import"./base/typography";
+@import"./utils/variables";
+@import"./utils/placeholders";
+@import"./utils/mixins";
 
-@import"./components/buttons";
-@import"./components/header";
+@import"./base/reset";
+@import"./base/base";
+@import"./base/typography";
 
 @import"./layout/grids";
 
-@import"./utils/mixins";
-@import"./utils/placeholders";
-@import"./utils/variables";
+@import"./components/header";
+@import"./components/hero";
+@import"./components/modal";
+@import"./components/advantages";
+@import"./components/work";
+@import"./components/team";
+@import"./components/customer";
+@import"./components/footer";
+@import"./components/portfolio";
+@import"./components/buttons";
+
+
+
+
+
+
+
+
+
+
+

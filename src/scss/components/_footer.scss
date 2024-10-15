@@ -1,0 +1,141 @@
+.footer {
+  background-color: $color-text-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+.footer-img {
+  margin-bottom: 20px;
+}
+.item-location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-text-tertiary;
+}
+.information-item {
+  margin-bottom: 10px;
+}
+.information-item:last-child {
+  margin-bottom: 0px;
+}
+.emeil-link-footer {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.emeil-link-footer:hover {
+  color: $color-hover;
+}
+.tel-link-footer {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.tel-link-footer:hover {
+  color: $color-hover;
+}
+.networks-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-tertiary;
+  margin-bottom: 20px;
+}
+.networks {
+  margin-right: 23px;
+}
+.networks-list {
+  display: flex;
+  gap: 10px;
+}
+
+.networks-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks-icon {
+  width: 20px;
+  height: 20px;
+  fill: $color-text-tertiary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks-link:hover {
+  background-color: $color-hover;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks-link:hover .networks-icon {
+  fill: $color-text-tertiary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.form-footer-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  padding-left: 16px;
+}
+.form-footer-input:focus-within {
+  border-color: $color-hover;
+}
+.form-footer-input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: $color-text-tertiary;
+}
+.form-footer-btn:hover {
+  box-shadow: 1px 4px 6px 0 rgb(55, 207, 238, 0.53);
+}
