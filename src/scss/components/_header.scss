@@ -1,116 +1,116 @@
-  
-  // HEADER
+// HEADER
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  // MENU
-  .menu-list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-  .item-link {
-    position: relative;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: $color-text-primary;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .item-link:hover {
-    color:$color-hover;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .item-link::after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: $color-hover;
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transform-origin: right;
-  }
-  .item-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  // CONTACTS
-  .header-contacts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-between;
-  }
-  // CONTACTS EMAIL
-  .emeil-link {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: $color-text-secondary;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-  }
-  .emeil-link:hover {
-    color: $color-hover;
-  }
-  .emeil-link:hover .emeil-icon {
-    fill: $color-hover;
-  }
-  // CONTACTS TEL   
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// MENU
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav__link {
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-text-primary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover {
+  color: $color-hover;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $color-hover;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: right;
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+// CONTACTS
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+// CONTACTS EMAIL
+.contacts__email {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.contacts__email:hover {
+  color: $color-hover;
+}
+.contacts__email:hover .contacts__emeil-icon {
+  fill: $color-hover;
+}
+// CONTACTS TEL
 
-  .tel-link {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color:$color-text-secondary;
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-  }
-  .tel-link:hover .tel-icon {
-    fill: $color-hover;
-  }
-  .tel-link:hover {
-    color: $color-hover;
-  }
- // contacts-icon
-  .emeil-icon {
-    width: 16px;
-    height: 12px;
-    fill: $color-text-secondary;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-  }  .tel-icon {
-    width: 10px;
-    height: 16px;
-    fill:$color-text-secondary;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-  }
+.contacts__tel {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+.contacts__tel:hover .contacts__tel-icon {
+  fill: $color-hover;
+}
+.contacts__tel:hover {
+  color: $color-hover;
+}
+// contacts-icon
+.contacts__emeil-icon {
+  width: 16px;
+  height: 12px;
+  fill: $color-text-secondary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}
+.contacts__tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: $color-text-secondary;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+}

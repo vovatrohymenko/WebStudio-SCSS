@@ -1,5 +1,5 @@
 // HERO
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@
 }
 
 // HERO TITLE
-.hero-title {
+.hero__title {
   max-width: 692px;
   font-weight: 900;
   font-size: 44px;

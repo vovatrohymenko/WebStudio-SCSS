@@ -23,35 +23,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a class="header-logotype" href="#"
-          ><img class="logotype-img" src="../img/webstudio.svg" alt="Логотип"
+      <div class="container header__container">
+        <a class="header__logotype" href="#"
+          ><img class="logotype" src="../img/webstudio.svg" alt="Логотип"
         /></a>
-        <nav class="header-menu">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="item-link" href="../../index.html">Студія</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="../../index.html">Студія</a>
             </li>
-            <li class="menu-item">
-              <a class="item-link" href="#">Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Портфоліо</a>
             </li>
-            <li class="menu-item">
-              <a class="item-link" href="#">Контакти</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="contacts-item">
-            <a class="emeil-link" href="mailto:info@devstudio.com"
-              ><svg class="emeil-icon">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__email" href="mailto:info@devstudio.com"
+              ><svg class="contacts__emeil-icon">
                 <use href="./src/img/symbol-defs.svg#icon-letter"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item-tel">
-            <a class="tel-link" href="tel:+380961111111">
-              <svg class="tel-icon">
+          <li class="contacts__item">
+            <a class="contacts__tel" href="tel:+380961111111">
+              <svg class="contacts__tel-icon">
                 <use href="./src/img/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -64,251 +64,253 @@
       <section class="portfolio">
         <div class="container">
           <ul class="directions">
-            <li class="directions-item">
-              <button class="directions-button">Усі</button>
+            <li class="directions__item">
+              <button class="directions__button">Усі</button>
             </li>
-            <li class="directions-item">
-              <button class="directions-button">Веб-сайти</button>
+            <li class="directions__item">
+              <button class="directions__button">Веб-сайти</button>
             </li>
-            <li class="directions-item">
-              <button class="directions-button">Додатки</button>
+            <li class="directions__item">
+              <button class="directions__button">Додатки</button>
             </li>
-            <li class="directions-item">
-              <button class="directions-button">Дизайн</button>
+            <li class="directions__item">
+              <button class="directions__button">Дизайн</button>
             </li>
-            <li class="directions-item">
-              <button class="directions-button">Маркетинг</button>
+            <li class="directions__item">
+              <button class="directions__button">Маркетинг</button>
             </li>
           </ul>
-          <div class="portfolio-projects">
-            <article class="project-portfolio">
-              <figure class="project-photo">
+          <div class="portfolio">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img1_o.jpg"
                   alt="Технокряк"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-text">Веб-сайт</p>
+              <h2 class="project__title">Технокряк</h2>
+              <p class="project__text">Веб-сайт</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img2_o.jpg"
                   alt="Постер New Orlean vs Golden Star"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-              <p class="project-text">Дизайн</p>
+              <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+              <p class="project__text">Дизайн</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img3_o.jpg"
                   alt="Ресторан Seafood"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Ресторан Seafood</h2>
-              <p class="project-text">Додаток</p>
+              <h2 class="project__title">Ресторан Seafood</h2>
+              <p class="project__text">Додаток</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img4_o.jpg"
                   alt="Ресторан Seafood"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Проєкт Prime</h2>
-              <p class="project-text">Маркетинг</p>
+              <h2 class="project__title">Проєкт Prime</h2>
+              <p class="project__text">Маркетинг</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img5_o.jpg"
                   alt="addition"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Проєкт Boxes</h2>
-              <p class="project-text">Додаток</p>
+              <h2 class="project__title">Проєкт Boxes</h2>
+              <p class="project__text">Додаток</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img6_o.jpg"
                   alt="website"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Inspiration has no Borders</h2>
-              <p class="project-text">Веб-сайт</p>
+              <h2 class="project__title">Inspiration has no Borders</h2>
+              <p class="project__text">Веб-сайт</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img7_o.jpg"
                   alt="design"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Видання Limited Edition</h2>
-              <p class="project-text">Дизайн</p>
+              <h2 class="project__title">Видання Limited Edition</h2>
+              <p class="project__text">Дизайн</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img8_o.jpg"
                   alt="marketing"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Проєкт LAB</h2>
-              <p class="project-text">Маркетинг</p>
+              <h2 class="project__title">Проєкт LAB</h2>
+              <p class="project__text">Маркетинг</p>
             </article>
-            <article class="project-portfolio">
-              <figure class="project-photo">
+            <article class="project">
+              <figure class="project__photo">
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="../img/portfolio/img9_o.jpg"
                   alt="addition"
                 />
-                <p class="project-overlay">
+                <p class="project__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </figure>
 
-              <h2 class="project-title">Growing Business</h2>
-              <p class="project-text">Додаток</p>
+              <h2 class="project__title">Growing Business</h2>
+              <p class="project__text">Додаток</p>
             </article>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="information-footer">
-          <a class="footer-link" href="#"
+      <div class="container footer__container">
+        <div class="information">
+          <a class="information__link" href="#"
             ><img
-              class="footer-img"
+              class="information__photo"
               src="../img/webstudio-footer.svg"
               alt="Логотип підвалу"
           /></a>
-          <ul class="footer-information">
-            <li class="information-item">
-              <p class="item-location">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="informations">
+            <li class="informations__item">
+              <p class="informations__location">
+                м. Київ, пр-т Лесі Українки, 26
+              </p>
             </li>
-            <li class="information-item">
-              <a class="emeil-link-footer" href="mailto:info@devstudio.com"
+            <li class="informations__item">
+              <a class="informations__emeil" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="information-item">
-              <a class="tel-link-footer" href="tel:+380961111111"
+            <li class="informations__item">
+              <a class="informations__tel" href="tel:+380961111111"
                 >+380 961 111 11 11</a
               >
             </li>
           </ul>
         </div>
         <div class="networks">
-          <p class="networks-title">приєднуйтесь</p>
-          <ul class="networks-list">
-            <li class="networks-item">
-              <a class="networks-link" href="#"
-                ><svg class="networks-icon">
+          <p class="networks__title">приєднуйтесь</p>
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a class="networks__link" href="#"
+                ><svg class="networks__icon">
                   <use href="../img/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
-              <a class="networks-link" href="#"
-                ><svg class="networks-icon">
+            <li class="networks__item">
+              <a class="networks__link" href="#"
+                ><svg class="networks__icon">
                   <use href="../img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
-              <a class="networks-link" href="#"
-                ><svg class="networks-icon">
-                  <use href="../img/symbol-defs.svg#icon-twitter"></use>
+            <li class="networks__item">
+              <a class="networks__link" href="#"
+                ><svg class="networks__icon">
+                  <use href="../img/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="networks-item">
-              <a class="networks-link" href="#"
-                ><svg class="networks-icon">
+            <li class="networks__item">
+              <a class="networks__link" href="#"
+                ><svg class="networks__icon">
                   <use href="../img/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="form-footer-email">
-          <p class="form-footer-text">Підпишіться на розсилку</p>
-          <form class="form-footer" action="#">
-            <div class="form-footer-wrapper">
+        <div class="forms">
+          <p class="forms__text">Підпишіться на розсилку</p>
+          <form class="form" action="#">
+            <div class="form__wrapper">
               <input
                 placeholder="E-mail"
-                class="form-footer-input"
+                class="form__input"
                 id="contact-email"
                 type="email"
               />
             </div>
-            <button class="form-footer-btn button">
-              Підписатися<svg class="form-footer-icon">
+            <button class="form__btn button">
+              Підписатися<svg class="form__icon">
                 <use href="../img/symbol-defs.svg#icon-airplane"></use>
               </svg>
             </button>

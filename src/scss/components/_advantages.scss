@@ -1,46 +1,46 @@
 .advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .advantages-list {
-    display: flex;
-    gap: 30px;
-    flex-basis: calc((100% - 30px) / 4);
-  }
-  .advantages-item::before {
-    content: "";
-    display: block;
-    height: 100px;
-    background-color: #f5f4fa;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .advantages-item:nth-child(1)::before {
-    background-image: url(../img/antenna.svg);
-  }
-  .advantages-item:nth-child(2)::before {
-    background-image: url(../img/clock.svg);
-  }
-  .advantages-item:nth-child(3)::before {
-    background-image: url(../img/diagram.svg);
-  }
-  .advantages-item:nth-child(4)::before {
-    background-image: url(../img/astronaut.svg);
-  }
-  .advantages-title {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .advantages-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--colortextsecondary);
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages__list {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 4);
+}
+.advantages__item::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.advantages__item:nth-child(1)::before {
+  background-image: url(../img/antenna.svg);
+}
+.advantages__item:nth-child(2)::before {
+  background-image: url(../img/clock.svg);
+}
+.advantages__item:nth-child(3)::before {
+  background-image: url(../img/diagram.svg);
+}
+.advantages__item:nth-child(4)::before {
+  background-image: url(../img/astronaut.svg);
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--colortextsecondary);
+}
