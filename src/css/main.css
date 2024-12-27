@@ -354,7 +354,7 @@ body {
   fill: #2196f3;
 }
 
-.contacts__wrapper:focus-within .contacs__icon {
+.contacts__wrapper:focus-within .contacts__icon {
   fill: #2196f3;
 }
 
@@ -381,6 +381,10 @@ body {
 
 .button__send:hover {
   box-shadow: 4px 8px 12px 4px rgba(55, 207, 238, 0.53);
+  background-color: #188ce8;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contract__condition {
@@ -641,10 +645,10 @@ body {
   display: flex;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: border-color;
 }
 
-.customers__link:hover .customer-icon {
+.customers__link:hover .customers__icon {
   fill: #2196f3;
 }
 
@@ -796,9 +800,13 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   padding-left: 16px;
+  transition-property: border-color;
+  transition-duration: 250px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__input:focus-within {
+.form__input:focus-within,
+.form__input:hover {
   border-color: #2196f3;
 }
 

@@ -125,7 +125,7 @@
 .contacts__wrapper:hover .contacts__icon {
   fill: $color-hover;
 }
-.contacts__wrapper:focus-within .contacs__icon {
+.contacts__wrapper:focus-within .contacts__icon {
   fill: $color-hover;
 }
 .contacts__text {
@@ -149,6 +149,10 @@
 }
 .button__send:hover {
   box-shadow: 4px 8px 12px 4px rgb(55, 207, 238, 0.53);
+  background-color: #188ce8;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contract__condition {
   font-family: var(--font-family);

@@ -33,9 +33,9 @@
   display: flex;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition-property: border-color;
 }
-.customers__link:hover .customer-icon {
+.customers__link:hover .customers__icon {
   fill: $color-hover;
 }
 .customers__link:hover {
